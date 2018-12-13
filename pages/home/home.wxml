@@ -1,0 +1,22 @@
+<!--pages/home/home.wxml-->
+<!--轮播图-->
+<view class="slider">
+  <swiper autoplay interval="3500" indicator-dots>
+    <swiper-item bindtap="handleTap01" wx:for="{{imgs}}" wx:key="item.index">
+      <image width="100%" height="390" src="{{item.img_url}}" lazy-load ></image>
+    </swiper-item>
+
+  </swiper>
+</view>
+<!--九宫格-->
+<view class="index-nav">
+  <view bindtap="handleTap01" class="nav-item" wx:for="{{list}}" wx:key="item.index" >
+    <image src="{{item.img}}" mode="aspectFill" lazy-load bindtap="handleJumpNews" data-id="{{item.id}}"></image>
+    <text>{{item.text}}</text>
+  </view>
+  
+</view>
+
+<!--分割块-->
+<view class="divider"></view>
+<!--按钮-->

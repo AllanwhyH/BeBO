@@ -1,0 +1,10 @@
+/* pages/product/product.wxss */
+.card{
+    background-color:#fff;
+    border:1rpx solid #ddd;
+    border-radius:20rpx;
+    margin:60rpx 20rpx;
+    padding:30rpx;
+    display:flex;
+    flex-direction:column;
+}

@@ -1,0 +1,9 @@
+<!--pages/new/new.wxml-->
+<!--商城新闻列表-->
+<view class="card" wx:for="{{list}}">
+    <text class="card-title">{{item.title}}</text>
+    <text class="card-date">{{item.ctime}}</text>
+    <image src="{{item.img_url}}" class="card-img" mode="aspectFill" lazy-load></image>
+    <text class="card-desc">{{item.desc}}</text>
+    <text class="card-read arrow">查看详情</text>
+</view>

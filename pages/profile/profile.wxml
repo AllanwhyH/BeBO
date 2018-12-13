@@ -1,0 +1,20 @@
+<!--pages/profile/profile.wxml-->
+<view class="avatar">
+  <image bindtap="onMusicTap" src="{{isPlayingMusic?'http://localhost:3000/img/music-stop.png':'http://localhost:3000/img/music-start.png'}}" lazy-load mode="aspectFill"></image>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <view class="cell-item">个人资料</view>
+  <view class="cell-item">资料显示</view>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <view class="cell-item">常见问题</view>
+  <view class="cell-item">使用条款</view>
+  <view class="cell-item">常见问题</view>
+  <view class="cell-item">使用条款</view>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <view class="cell-item">设置</view>
+</view>
